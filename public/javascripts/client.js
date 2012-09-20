@@ -14,7 +14,10 @@ window.onload = function () {
 
   console.log("ips : ", ips);
 
-  ips.push(window.location.search.split('ip=')[1]);
+  var urlIp = window.location.search.split('ip=')[1];
+  if (urlIp) {
+    ips.push(urlIp);
+  }
 
   // Connect to socket.io
   //var socket = io.connect('kernicpanel.pusher.nodejitsu.com:8080/');
