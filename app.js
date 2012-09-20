@@ -28,7 +28,7 @@ app.configure('development', function(){
 });
 
 app.get('/', function(req,res){
-  res.redirect('/user/?user=testUsermname');
+  res.redirect('/user/?user=testUsername');
 });
 
 app.get('/user/', routes.index);
