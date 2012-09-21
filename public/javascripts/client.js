@@ -12,7 +12,6 @@ window.onload = function () {
   socket.on('message', function(data){
     var message = 'ip : ' + data.ip + ' <br/> message : ' + data.message;
     console.log("message : ", data);
-    test = data;
     $('#message').append('<p>' + message + '</p>');
   });
 
